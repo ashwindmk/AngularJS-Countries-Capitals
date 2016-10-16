@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Capitals</title>
+    <script src="js/angular.min.js"></script>
+    <style>
+        body {
+            margin: auto;
+            padding: 2em 2em 2em 2em
+        }
+        li {
+            margin: 1em
+        }
+    </style>
+</head>
+<body ng-init="objects=[{country:'India', capital:'New Delhi'},
+{country:'Australia', capital:'Sydney'},
+{country:'Canada', capital:'Ottawa'},
+{country:'China', capital:'Beijing'},
+{country:'Germany', capital:'Berlin'},
+{country:'Japan', capital:'Tokyo'},
+{country:'USA', capital:'Washington DC'}]">
+
+    <h2>Countries : Capitals</h2>
+
+    <ol>
+        <li ng-repeat="object in objects">
+            <b>{{object.country}}</b> : {{object.capital}}
+        </li>
+    </ol>
+
+
+</body>
+</html>
